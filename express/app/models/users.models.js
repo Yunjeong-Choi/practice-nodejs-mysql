@@ -1,6 +1,8 @@
 const connection = require("./db");
 
-// TODO: 객체가 하나 생성이 된건가?
+// Q. 객체가 하나 생성이 된건가?
+// A. 놉. 생성자 함수가 User라는 변수에 할당된것
+// https://ko.javascript.info/constructor-new
 const User = function (user) {
   this.id = user.id;
   this.password = user.password;
