@@ -1,7 +1,6 @@
 module.exports = {
   host: "localhost",
   user: "root",
-  // TODO: 비번 바꿔야겠다
-  password: "Juliet1526$$",
+  password: "0000",
   database: "my_db",
 };
