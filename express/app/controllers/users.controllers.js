@@ -16,6 +16,8 @@ exports.create = (req, res) => {
   User.create(user, (err, data) => {
     if (err) {
       res.status(500).send({
+        // TODO: 에러를 정의하는 것도 비즈니스 로직으로 정의할 수 있음
+        // format은 컨트롤러에서, 뒷처리는 서비스에서
         message: err.message || "Some error occurred while creating a user.",
       });
     } else {

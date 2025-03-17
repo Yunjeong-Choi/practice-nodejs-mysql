@@ -47,6 +47,7 @@ export class UsersService {
   }
 
   async findOne(id: number): Promise<UserEntity | null> {
+    // TODO: breakpoint
     const user = await this.userRepository.findOne({
       where: {
         id,

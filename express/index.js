@@ -5,6 +5,7 @@ const routes = require("./app/routes/users.routes");
 
 const app = express();
 
+// TODO: middleware를 사용해서 error 처리해주는것 해보기. throw err를 따로 처리해주지 않으면 서버가 죽어버림
 // req가 routes에 넘어가기 전에 이 처리를 해줘야 함
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
